@@ -5,24 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first To-do</title>
-   
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-            <h1>Мой первый To-do</h1>
-            <h2>Задачи</h2>
-            <input type="text">
-            <span>Добавить новую задачу</span>
-            <ul>
-                <li>Сделать Зарядку</li>
-                <li class="checked">Убрать комнату</li>
-                <li>Помочь по хозяйству</li> 
-                <li></li>
-            </ul>
-    
-    </div>
+    <div id="wrapp" class="wrapper">
+        <h1>Мой первый To-do</h1>
+        <h2>Задачи</h2>
+        <input type="text" id="input" placeholder="Title">
+        <span class="add" >Добавить задачу</span>
+    </div>    
+    <ul id="li_wrapper">
+        <li>Сделать Зарядку<span class='close'>×</span></li>
+        <li class="checked">Убрать комнату<span class='close'>×</span></li>
+        <li>Помочь по хозяйству<span class='close'>×</span></li>
+        <li>Написать To-do list<span class='close'>×</span></li>
+    </ul>
 
-          
     <script src="script.js"></script>
 </body>
 </html>
